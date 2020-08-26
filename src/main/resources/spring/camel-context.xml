@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans.xsd        
+            http://camel.apache.org/schema/spring       
+            http://camel.apache.org/schema/spring/camel-spring.xsd">
+<!--
+	<bean class="com.example.tademo.processor.IuputTransformProcessor"
+		id="inputTransformProcessor" scope="singleton" />
+	<bean class="com.example.tademo.processor.TaApplicationDataProcessor"
+		id="taApplicationDataProcessor" scope="singleton" />
+-->
+	<camelContext id="camel"
+		xmlns="http://camel.apache.org/schema/spring">
+
+		<!-- define the defult error handler, which will catch all exception type 
+			then forward to errorRoute -->
+<!--
+		<onException>
+			<exception>java.lang.Exception</exception>
+			<handled>
+				<constant>true</constant>
+			</handled>
+			<to id="call_errorRoute" uri="direct:errorRoute" />
+		</onException>
+-->
+
+	</camelContext>
+</beans>
