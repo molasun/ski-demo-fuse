@@ -9,8 +9,9 @@ public class TaApplicationMapper {
 		
 		ApplicationPo application = new ApplicationPo();
 		
-		application.setApplicationId(dto.getId());
-		
+//		application.setApplicationId(dto.getId());
+				
+		application.setApplicationId(dto.getApplicationId());
 		application.setApplicantId(dto.getApplicant().getApplicantId());
 		application.setApplicantName(dto.getApplicant().getApplicantName());
 		application.setApplicantBirthDate(dto.getApplicant().getApplicantBirthDate());

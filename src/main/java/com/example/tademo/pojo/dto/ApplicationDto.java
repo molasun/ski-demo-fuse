@@ -13,17 +13,14 @@ public class ApplicationDto {
 	
 	private String id;
 	
+	private String applicationId;
 	private Applicant applicant;
 	private Insured insured;
 	
 	private int insuranceAmount;
 	private String channel;
 	
-	private Date applyTime;
-	private Date modifyTime;
-	private Date rejectTime;
-	private Date approvedTime;
-	
+	private Date statusTime;	
 	private String status;
 
 }
