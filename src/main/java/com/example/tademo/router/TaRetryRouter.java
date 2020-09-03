@@ -14,7 +14,7 @@ public class TaRetryRouter extends RouteBuilder{
 	public void configure() throws Exception {
 					
 		// loop
-		from("jms:queue:RETRY")
+		from("jms:queue:RETRY?acknowledgementModeName=CLIENT_ACKNOWLEDGE")
 		   .routeId("retryRoute")
 		   .setHeader("loopCode").constant(1)
 		   .setProperty("rawData", simple("${body}"))
